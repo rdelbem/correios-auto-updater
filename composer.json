@@ -1,0 +1,18 @@
+{
+  "name": "delbem/correios-auto-update",
+  "description": "It will auto update your sales by checking if correios have already finished shipping the item.",
+  "type": "wordpress-plugin",
+  "license": "gpl v2",
+  "authors": [
+    {
+      "name": "Rodrigo Del Bem",
+      "email": "rodrigodelbem@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Cau\\": "./src"
+    }
+  }
+}
