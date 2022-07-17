@@ -25,7 +25,7 @@ Esse plugin depende do WooCommerce e do plugin dos correios.
 = Yes, WooCommerce and Correios by Claudio Sanches
 
 == Screenshots ==
-1. No screenshots
+1. The settings screen
 
 == Changelog ==
 
