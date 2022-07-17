@@ -4,7 +4,7 @@ Donate link: https://delbem.net
 Tags: correios, shipping
 Requires at least: 4.7
 Tested up to: 5.9
-Stable tag: 5.0
+Stable tag: 1.0.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
