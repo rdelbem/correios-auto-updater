@@ -26,10 +26,7 @@ class CauUpdateOrders extends CauCorreiosAutoUpdater
             if (isset($status) && $status === DELIVERED) {
                 $order = wc_get_order($id);
                 if ($order->get_status() === 'processing') {
-                    //Unfortunately this approach does not work, WC is buggy and strips wc prefix
-                    //$order->update_status('completed');
-                    $orderPostArgs = ['ID' => $id, 'post_status' => 'wc-completed'];
-                    wp_update_post($orderPostArgs);
+                    $order->update_status('completed');
                 }
             }
         }

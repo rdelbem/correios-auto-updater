@@ -4,11 +4,12 @@
 
 defined('ABSPATH') || die();
 
-//Fail fast: verifies if woocommerce exists and is active
+//Fail fast: verifies if woocommerce exists and is active and the Brazilian correios for WC
 require_once(ABSPATH . 'wp-admin/includes/plugin.php');
-if (!is_plugin_active('woocommerce/woocommerce.php')) {
+if (!is_plugin_active('woocommerce/woocommerce.php') && !is_plugin_active('woocommerce-correios/woocommerce-correios.php')) {
     return;
 }
+
 //autoload
 require_once wp_normalize_path(plugin_dir_path(__FILE__) . '/vendor/autoload.php');
 
@@ -25,11 +26,11 @@ require_once wp_normalize_path(plugin_dir_path(__FILE__) . '/src/CauDefines.php'
 *
 * @wordpress-plugin
 * Plugin Name:       Correios auto updater
-* Plugin URI:        https://example.com/plugin-name
+* Plugin URI:        https://...
 * Description:       It will auto update your sales by checking if correios have already finished shipping the item.
 * Version:           1.0.0
 * Requires at least: 5.5
-* Requires PHP:      7.3
+* Requires PHP:      7.4
 * Author:            Rodrigo Vieira Del Bem
 * Author URI:        https://delbem.net
 * Text Domain:       correios-auto-updater
