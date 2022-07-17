@@ -26,7 +26,7 @@ require_once wp_normalize_path(plugin_dir_path(__FILE__) . '/src/CauDefines.php'
 *
 * @wordpress-plugin
 * Plugin Name:       Correios auto updater
-* Plugin URI:        https://...
+* Plugin URI:        https://delbem.net/cau
 * Description:       It will auto update your sales by checking if correios have already finished shipping the item.
 * Version:           1.0.0
 * Requires at least: 5.5
